@@ -1,2 +1,2 @@
 # DNAm-based-age-predictor
-A chronological age predictor based on DNA methylation
+Chronological age predictor based on DNA methylation from Illumina HumanMethylation450/EPIC arrays 
