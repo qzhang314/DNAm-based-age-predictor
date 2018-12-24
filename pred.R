@@ -1,8 +1,9 @@
 ##################################################################################################
 ###                   									         #	
-###        This Script is used to do age prediction based on DNA methylation data(450K)          #
+###        This Script is used to do age prediction based on DNA methylation data(450K/EPIC)     #
 ###        Coefficients of the predictor are based on 13,566 training samples			 #
 ###	   Two age predictors based on different methods(Elastic Net and BLUP) can be used       #
+###	   Please see details in https://www.biorxiv.org/content/early/2018/10/28/327890	 #
 ###	   Qian Zhang 27-03-2018, Email: q.zhang@uq.edu.au					 #
 ##################################################################################################
 
