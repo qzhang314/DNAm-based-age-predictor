@@ -17,7 +17,7 @@ Rscript pred.R -i input_file -o output_file -a age_file
 
 ## Examples 
 ##### please use this example to test whether the preditor can work properly in your working environment
-```bash
+```console
 Rscript pred.R -i data.rds -o age.pred -a data.age     
 ```
 
