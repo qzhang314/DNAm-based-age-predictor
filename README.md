@@ -5,7 +5,9 @@ There are two predictors (two sets of coefficients) built based on same set of 1
 
 
 ## How to use the predictor
+```console
 Rscript pred.R -i input_file -o output_file -a age_file
+```
 
 > input_file: a R object file which contains the DNA methylation information for individuals (N * M matrix). N is the number of individuals and M is the number of CpG sites. Beta value is used as DNA methylation measurement.  
 
@@ -15,8 +17,9 @@ Rscript pred.R -i input_file -o output_file -a age_file
 
 ## Examples 
 ##### please use this example to test whether the preditor can work properly in your working environment
+```console
 Rscript pred.R -i data.rds -o age.pred -a data.age     
-
+```
 
 ## Contact us 
 If you have any problems about the code and predictor, please contact us: q.zhang@uq.edu.au
