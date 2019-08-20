@@ -22,3 +22,4 @@ Rscript pred.R -i data.rds -o age.pred -a data.age
 If you have any problems about the code and predictor, please contact us: q.zhang@uq.edu.au
 
 ## Citation
+> Zhang Q, Vallerga C, Walker R, Lin T, Henders A, Montgomery G, He J, Fan D, Fowdar J, Kennedy M, et al: Improved prediction of chronological age from DNA methylation limits it as a biomarker of ageing. bioRxiv 2018.
