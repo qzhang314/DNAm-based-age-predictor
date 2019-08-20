@@ -1,6 +1,7 @@
 # DNAm-based-age-predictor
 Chronological age predictor based on DNA methylation from Illumina HumanMethylation450/EPIC arrays 
 
+There are two predictors (two sets of coefficients) built based on same set of 13,566 training samples, but using different methods. One is based on Elastic Net, the other is based on best linear unbiased prediction (BLUP). 
 
 ################## how to use the predictor ###############
 
