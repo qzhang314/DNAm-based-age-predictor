@@ -17,12 +17,6 @@ Rscript pred.R -i input_file -o output_file -a age_file
 > age_file: an input file which has two column: individual ID and real chronological age. Please note, the first line should be the header.
 
 
-We also provide a choice to predict the chronological age using multi predictors based on different number of training sample sizes.
-
-```console
-Rscript pred.R -m -i input_file -o output_file -a age_file
-```
-
 
 ## Examples 
 #### Please use this example to test whether the preditor can work properly in your working environment
