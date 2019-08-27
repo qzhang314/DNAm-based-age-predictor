@@ -65,6 +65,12 @@ print("2. Loading predictors")
 read.table("en.coef",stringsAsFactor=F,header=T)->encoef
 read.table("blup.coef",stringsAsFactor=F,header=T)->blupcoef
 
+en_int<-encoef[1,2]
+blup_int<-blup_int[1,2]
+
+encoef<-encoef[-1,]
+blupcoef<-blupcoef[-1,]
+
 rownames(encoef)<-encoef$probe
 rownames(blupcoef)<-blupcoef$probe
 
@@ -86,8 +92,8 @@ print("4. Predicting")
 
 encoef<-encoef[encomm,]
 blupcoef<-blupcoef[blupcomm,]
-encoef$coef%*%dataNona.norm[encomm,]+65.79295->enpred
-blupcoef$coef%*%dataNona.norm[blupcomm,]+91.15396->blupred
+encoef$coef%*%dataNona.norm[encomm,]+en_int->enpred
+blupcoef$coef%*%dataNona.norm[blupcomm,]+blup_int->blupred
 
 
 ############# 6. Save the predicted result ###########
