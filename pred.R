@@ -66,7 +66,7 @@ read.table("en.coef",stringsAsFactor=F,header=T)->encoef
 read.table("blup.coef",stringsAsFactor=F,header=T)->blupcoef
 
 en_int<-encoef[1,2]
-blup_int<-blup_int[1,2]
+blup_int<-blupcoef[1,2]
 
 encoef<-encoef[-1,]
 blupcoef<-blupcoef[-1,]
