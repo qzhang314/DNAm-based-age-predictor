@@ -53,6 +53,9 @@ if(nrow(data) > ncol(data)){
 print("1.2 Replacing missing values with mean value")
 dataNona<-apply(data,2,function(x) addna(x))   ###############  replace the NA with mean value for each probe 
 
+dataNona<- dataNona[,apply(dataNona,2,function(x) sum(is.na(x)))!=nrow(dataNona)] ############ remove the probe when it has NA across all individuals
+print(paste0(ncol(data) - ncol(dataNona)," probe(s) is(are) removed since it has (they have) NA across all individuals"))
+
 
 print("1.3 Standardizing")
 dataNona.norm<- apply(dataNona,1,scale)        ############### standardize the DNA methylation within each individual, remove the mean and divided by the SD of each individual     Probe * IND
